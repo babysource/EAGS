@@ -1,2 +1,2 @@
-# ECAG
-Erlang communication access gateway
+# EAGS
+Erlang communication access gateway service
