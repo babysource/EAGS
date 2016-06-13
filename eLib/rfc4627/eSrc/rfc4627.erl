@@ -485,7 +485,7 @@ parse_array(Chars, Acc) ->
 %%
 %% @doc Used by the `?RFC4627_FROM_RECORD' macro in `rfc4627.hrl'.
 %%
-%% Given a record type definiton of ``-record(myrecord, {field1,
+%% Given a record type definition of ``-record(myrecord, {field1,
 %% field})'', and a value ``V = #myrecord{}'', the code
 %% ``?RFC4627_FROM_RECORD(myrecord, V)'' will return a JSON "object"
 %% with fields corresponding to the fields of the record. The macro
@@ -508,7 +508,7 @@ encode_record_fields(R, Index, [Field | Rest]) ->
 %%
 %% @doc Used by the `?RFC4627_TO_RECORD' macro in `rfc4627.hrl'.
 %%
-%% Given a record type definiton of ``-record(myrecord, {field1,
+%% Given a record type definition of ``-record(myrecord, {field1,
 %% field})'', and a JSON "object" ``J = {[{"field1", 123},
 %% {"field2", 234}]}'', the code ``?RFC4627_TO_RECORD(myrecord, J)''
 %% will return a record ``#myrecord{field1 = 123, field2 = 234}''.
