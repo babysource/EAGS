@@ -85,7 +85,7 @@ code_change(_OldVsn, State, _Extra) ->
     {ok, State}.
 
 do_log(#log{level = L} = Log, #syslog_appender{level=Level} = State) ->
-    %% Syslog levels are a little bit differnt
+    %% Syslog levels are a little bit different
     case should_log(L, Level) of
 	true ->
 	    Pid = State#syslog_appender.socket,

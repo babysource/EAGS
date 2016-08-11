@@ -29,7 +29,7 @@
 %% * Record definitions are still present and must be handled.
 %%
 %% * (Syntatic) local calls may actually be calls to an imported
-%%   funtion or a BIF. It is a local call if and only if there
+%%   function or a BIF. It is a local call if and only if there
 %%   is a definition for the function in the module.
 %%
 %% * When we introduce the module parameters and 'THIS' in each
